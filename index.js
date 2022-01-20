@@ -139,9 +139,9 @@ nopref = true
 numbernye = '0'
 autoketik = false;
 prefixStatus = false;
-targetpc = "916909137213"; 
-owner = "916909137213"; 
-fakeyoi = "Xeon"; 
+targetpc = "447492623542"; 
+owner = "447492623542"; 
+fakeyoi = "Hamid"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -150,7 +150,7 @@ zeksapi = "vallganz5",
 dapapi = "anakasu",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
-nomorowner1 = "@916909137213"; 
+nomorowner1 = "@447492623542"; 
 fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\n㋛︎ 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
@@ -349,7 +349,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await xeon.chats.all();
-    const ownerNumber = [`916909137213@s.whatsapp.net`]
+    const ownerNumber = [`447492623542@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(xeon, mek);
     const groupMetadata = isGroup ? await xeon.groupMetadata(from) : "";
@@ -451,7 +451,7 @@ const math = (teks) => {
            return Math.floor(teks)
        }
 /*const reply = (teks) => {
-			xeon.sendMessage(from, teks, text, { thumbnail: iye, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/916909137213?text=hello`}}})
+			xeon.sendMessage(from, teks, text, { thumbnail: iye, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/447492623542?text=hello`}}})
 		}*/
     const sendMess = (hehe, teks) => {
       xeon.sendMessage(hehe, teks, text);
@@ -939,7 +939,7 @@ const reply = (teks) => {
              xeon.relayWAMessage(res)
         }
 const fakewa = (teks) => {        
-xeon.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `Xeon`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/916909137213?text=hello`}}})
+xeon.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `Xeon`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/447492623542?text=hello`}}})
 		}
 const replyfakelink = (teks) => {
 xeon.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
@@ -962,12 +962,12 @@ isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
                 "title": `Whatsapp`,
-                "body": `wa.me/916909137213`,
+                "body": `wa.me/447492623542`,
                 "mediaType": "10",
-                "mediaUrl": `wa.me/916909137213`,
+                "mediaUrl": `wa.me/447492623542`,
                 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                 "thumbnail": iye,
-                "sourceUrl": `wa.me/916909137213`,
+                "sourceUrl": `wa.me/447492623542`,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
@@ -1139,7 +1139,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
         let vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`));
         let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`));
         let fil = vote.map((v) => v.participant);
-        let id_vote = sender ? sender : "916909137213@s.whatsapp.net";
+        let id_vote = sender ? sender : "447492623542@s.whatsapp.net";
         if (fil.includes(id_vote)) {
           return mentions(
             "@" + sender.split("@")[0] + " You have voted",
@@ -1171,7 +1171,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
         const vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`));
         let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`));
         let fil = vote.map((v) => v.participant);
-        let id_vote = sender ? sender : "916909137213@s.whatsapp.net";
+        let id_vote = sender ? sender : "447492623542@s.whatsapp.net";
         if (fil.includes(id_vote)) {
           return mentions(
             "@" + sender.split("@")[0] + " You have voted",
@@ -1326,12 +1326,10 @@ const serialUser = createSerial(18)
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `「 *USER REGISTRATION* 」
 *Thank you for registering in the 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭 Database*
-
 *☂︎ Name :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
 *☂︎ Serial:* ${serialUser}
 *☂ ︎Total:* ${_registered.length} User
-
 *「 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
@@ -1400,8 +1398,8 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-        ptod = "916909137213@s.whatsapp.net"
-        dtod = '916909137213'
+        ptod = "447492623542@s.whatsapp.net"
+        dtod = '447492623542'
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
@@ -1409,7 +1407,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				stst = stst.status == 401 ? '' : stst.status
        menu = `
 🐶 Hi @${sender.split("@")[0]}
-
 シ︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
 シ︎ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
 シ︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
@@ -1459,8 +1456,6 @@ ${readmore}
  > ⬡ ${prefix}delimage <image name>
  > ⬡ ${prefix}imagelist
   > ⬡ ${prefix}bc
-
-
  ⬣ 𝙂𝙍𝙊𝙐𝙋 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}grup 
 > ⬡ ${prefix}promote 
@@ -1485,7 +1480,6 @@ ${readmore}
 > ⬡ ${prefix}resetlink
 > ⬡ ${prefix}group [open/close(button)]
  
-
  ⬣ 𝙈𝘼𝙆𝙄𝙉𝙂 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}sticker
 > ⬡ ${prefix}swm author|packname
@@ -1520,7 +1514,6 @@ ${readmore}
 > ⬡ ${prefix}wall text
 > ⬡ ${prefix}notewrite text
 > ⬡ ${prefix}pubglogo text|text
-
  
  ⬣ 𝘾𝙊𝙉𝙑𝙀𝙍𝙏 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}tomp3
@@ -1530,8 +1523,6 @@ ${readmore}
 > ⬡ ${prefix}fast
 > ⬡ ${prefix}reverse
 > ⬡ ${prefix}tourl
-
-
  ⬣ 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}play query
 > ⬡ ${prefix}play2 query
@@ -1547,14 +1538,12 @@ ${readmore}
 > ⬡ ${prefix}ytmp3 link
 > ⬡ ${prefix}ytmp4 link
  
-
  ⬣ 𝙏𝘼𝙂 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}hidetag
 > ⬡ ${prefix}contag
 > ⬡ ${prefix}sticktag
 > ⬡ ${prefix}totag
  
-
  ⬣ 𝙐𝙋𝙎𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}upswtxt
 > ⬡ ${prefix}upswlocation
@@ -1563,7 +1552,6 @@ ${readmore}
 > ⬡ ${prefix}upswvideo
 > ⬡ ${prefix}upswgif
  
-
  ⬣ 𝙁𝙐𝙉 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}slander
 > ⬡ ${prefix}slanderpc
@@ -1589,8 +1577,6 @@ ${readmore}
 > ⬡ ${prefix}couple
 > ⬡ ${prefix}handsome
 > ⬡ ${prefix}pretty
-
-
  ⬣ 𝙉𝙎𝙁𝙒 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}yuri
 > ⬡ ${prefix}hentai
@@ -1611,7 +1597,6 @@ ${readmore}
 > ⬡ ${prefix}megumin
 > ⬡ ${prefix}neko
 > ⬡ ${prefix}trapnime
-
 𝗡𝗼𝘁𝗲 : Horny = Bonks💥
 Just Learn to Make Bots 🐶
  
@@ -1621,8 +1606,8 @@ sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, 
 
 break
 case 'credit':
-   dtod = '916909137213'
-   dtod1 = '916909137213'
+   dtod = '447492623542'
+   dtod1 = '447492623542'
    dtod2 = '919774340154'
    dtod3 = ''
    dtod4 ='0'
@@ -1674,7 +1659,7 @@ case 'bugreport':
               if (args.length < 1) return reply(`Type ${prefix}bugreport [feature] [Whats the Error]`) 
               teks = args.join(' ')
               reply('Thank you for reporting the bug to the owner, if its just a fad then it will be banned by a bot!')
-              xeon.sendMessage('916909137213@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              xeon.sendMessage('447492623542@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               
               break
 case 'restart':
@@ -1771,7 +1756,7 @@ reply(`${mek.quoted.caption}`)
 break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-  reply('*click on the link below*\nwa.me/916909137213')
+  reply('*click on the link below*\nwa.me/447492623542')
 break
    
 case 'owner':
@@ -2071,13 +2056,9 @@ break
 case 'downloadmenu':
 menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}𝙮𝙩𝙢𝙥4 𝙡𝙞𝙣𝙠
-
 ㋛${prefix}𝙮𝙩𝙢𝙥3 𝙡𝙞𝙣𝙠
-
 ㋛${prefix}𝙥𝙡𝙖𝙮 𝙦𝙪𝙚𝙧𝙮
-
 ㋛${prefix}𝙞𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢 <𝙪𝙧𝙡>
-
 ㋛${prefix}𝙩𝙬𝙞𝙩𝙩𝙚𝙧 <𝙪𝙧𝙡>
 `
 sendButMessage(from, menu, `𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
@@ -2092,47 +2073,26 @@ break
 case 'groupmenu':
 menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
 ㋛${prefix}grup [3 Button]
-
 ㋛${prefix}promote <reply chat member>
-
 ㋛${prefix}demote <reply chat member>
-
 ㋛${prefix}setdesc
-
 ㋛${prefix}nsfw 1/0
-
 ㋛${prefix}setname
-
 ㋛${prefix}kick <reply/tag member>
-
 ㋛${prefix}add <reply/tag member>
-
 ㋛${prefix}getbio <reply chat member>
-
 ㋛${prefix}getname <reply chat member>
-
 ㋛${prefix}reminder <msg/2s>
-
 ㋛${prefix}listonline
-
 ㋛${prefix}sider [reply chat bot]
-
 ㋛${prefix}antilink
-
 ㋛${prefix}tod 
-
 ㋛${prefix}tospam amount
-
 ㋛${prefix}autojoin
-
 ㋛${prefix}antivirtex
-
 ㋛${prefix}kickarea
-
 ㋛${prefix}grouplink
-
 ㋛${prefix}resetlink
-
 ㋛${prefix}group [open/close(button)]
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
@@ -2147,61 +2107,33 @@ break
 case 'ownermenu':
 menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}off
-
 ㋛${prefix}bc
-
 ㋛${prefix}isbaileys
-
 ㋛${prefix}banchat
-
 ㋛${prefix}unbanchat
-
 ㋛${prefix}listbc
-
 ㋛${prefix}antidelete on|off
-
 ㋛${prefix}autotype on| off
-
 ㋛${prefix}autoread gc on / gc off
-
 ㋛${prefix}autovn on / off
-
 ㋛${prefix}anticall on | off
-
 ㋛${prefix}getcaption
-
 ㋛${prefix}bugcatalog
-
 ㋛${prefix}buggc [id grup]
-
 ㋛${prefix}okvirtex
-
 ㋛${prefix}on
-
 ㋛${prefix}status
-
 ㋛${prefix}setthumb
-
 ㋛${prefix}settarget
-
 ㋛${prefix}setfakeimg
-
 ㋛${prefix}setreply
-
 ㋛${prefix}hacked
-
 ㋛${prefix}setprefix
-
 ㋛${prefix}mode [2 Button self/public]
-
 ㋛${prefix}term <code>
-
 ㋛${prefix}eval <code>
-
 ㋛${prefix}colongsw [reply sw]
-
 ㋛${prefix}addvn <reply audio with name>
-
 ㋛${prefix}delvn <audio name>
  
 ㋛${prefix}vnlist
@@ -2229,15 +2161,10 @@ break
 case 'upswmenu':
 menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}upswteks teks
-
 ㋛${prefix}upswvideo
-
 ㋛${prefix}upswimage
-
 ㋛${prefix}upswvoice
-
 ㋛${prefix}upswsticker
-
 ㋛${prefix}upswlocation
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
@@ -2252,81 +2179,43 @@ break
 case 'othermenu':
 menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}ping
-
 ㋛${prefix}inspect
-
 ㋛${prefix}join
-
 ㋛${prefix}dice
-
 ㋛${prefix}numbers [number]
-
 ㋛${prefix}quote
-
 ㋛${prefix}write text
-
 ㋛${prefix}writeleft text
-
 ㋛${prefix}folioleft text
-
 ㋛${prefix}folioright text
-
 ㋛${prefix}ss link web
-
 ㋛${prefix}songlyrics <query>
-
 ㋛${prefix}namemeaning <name>
-
 ㋛${prefix}debug
-
 ㋛${prefix}loli 
-
 ㋛${prefix}debug2
-
 ㋛${prefix}infoearthquake
-
 ㋛${prefix}chat 91|P
-
 ㋛${prefix}searchmessage <query>
-
 ㋛${prefix}get url
-
 ㋛${prefix}githubstalk <query>
-
 ㋛${prefix}ytsearch <query>
-
 ㋛${prefix}igstalk <query>
-
 ㋛${prefix}tiktokstalk <query>
-
 ㋛${prefix}play <query>
-
 ㋛${prefix}video <query>
-
 ㋛${prefix}igstory <username>
-
 ㋛${prefix}twitter <link>
-
 ㋛${prefix}tiktok <link>
-
 ㋛${prefix}fb <link>
-
 ㋛${prefix}image <query>
-
 ㋛${prefix}anime <random>
-
 ㋛${prefix}pinterest <query>
-
 ㋛${prefix}comic <query>
-
 ㋛${prefix}lyrics <query>
-
 ㋛${prefix}chara <query>
-
 ㋛${prefix}playstore <query>
-
 ㋛${prefix}google <query>
-
 ㋛${prefix}gimage <query>
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
@@ -2341,41 +2230,23 @@ break
 case 'makermenu':
 menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
-
 ㋛${prefix}𝙨𝙬𝙢 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
-
 ㋛${prefix}𝙩𝙖𝙠𝙚 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
-
 ㋛${prefix}fdeface
-
 ㋛${prefix}emoji
-
 ㋛${prefix}golden text
-
 ㋛${prefix}flower text
-
 ㋛${prefix}wooden text
-
 ㋛${prefix}burn text
-
 ㋛${prefix}glow text
-
 ㋛${prefix}summer text
-
 ㋛${prefix}neon text
-
 ㋛${prefix}coffeecup2 text
-
 ㋛${prefix}coffeecup text
-
 ㋛${prefix}battlefield text|text
-
 ㋛${prefix}googletxt2 text|text
-
 ㋛${prefix}transformer text|text
-
 ㋛${prefix}write text
-
 ㋛${prefix}waifu
 `
 sendButMessage(from, menu, ` 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`, [
@@ -2945,7 +2816,6 @@ case 'herodetail':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 res = await herodetails(body.slice(12))
 her = `*Hero Details ${body.slice(12)}*
-
 *Name* : ${res.hero_name}
 *Role* : ${res.role}
 *Quotes* : ${res.entrance_quotes}
@@ -2954,7 +2824,6 @@ her = `*Hero Details ${body.slice(12)}*
 *Recommended Lane* : ${res.laning_recommendation}
 *Price* : ${res.price.battle_point} [Battle point] | ${res.price.diamond} [DM] | ${res.price.hero_fragment} [Fragment]
 *Release* : ${res.release_date}
-
 *Durability* : ${res.skill.durability}
 *Offence* : ${res.skill.offense}
 *Skill Effect* : ${res.skill_effects}
@@ -2967,7 +2836,6 @@ her = `*Hero Details ${body.slice(12)}*
 *HP* : ${res.attributes.hp}
 *Mana* : ${res.attributes.mana}
 *Mana Regen* : ${res.attributes.mana_regen}
-
 *Story* : ${res.background_story}`
 reply(her)
 break
@@ -3466,7 +3334,6 @@ ${reads
   .map(({ jid, t }) => `@${jid.split`@`[0]}\n_${formatDate(t * 1000)}_`)
   .join("\n")}
 ${members > 1 ? `${members - reads.length} left` : ""}
-
 *Sent to:*
 ${deliveries
   .sort((a, b) => b.t - a.t)
@@ -3753,7 +3620,6 @@ Reminder berhasil diaktifkan!
               xeon.sendMessage(
                 from,
                 `── 「 REMINDER 」 ──
-
 ⏰ @${sender.split("@")[0]} ⏰
 ➸ Message: ${messRemind}
 ➸ Type: ${reminder.getReminderType(sender, _reminder)}`,
@@ -3796,7 +3662,6 @@ Reminder berhasil diaktifkan!
               xeon.sendMessage(
                 from,
                 `── 「 REMINDER 」 ──
-
 ⏰ @${sender.split("@")[0]} ⏰
 ➸ Message: ${messRemind}
 ➸ Type: ${reminder.getReminderType(sender, _reminder)}`,
@@ -3840,7 +3705,6 @@ Reminder berhasil diaktifkan!
             if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
               anu = await reminder.getReminderMsg(sender, _reminder);
               teks = `── 「 REMINDER 」 ──
-
 ⏰ @${sender.split("@")[0]} ⏰
 ➸ Message: ${messRemind}
 ➸ Type: ${reminder.getReminderType(sender, _reminder)}`;
@@ -3884,7 +3748,6 @@ Reminder berhasil diaktifkan!
               xeon.sendMessage(
                 from,
                 `── 「 REMINDER 」 ──
-
 ⏰ @${sender.split("@")[0]} ⏰
 ➸ Message: ${messRemind}
 ➸ Type: ${reminder.getReminderType(sender, _reminder)}`,
@@ -4457,7 +4320,6 @@ case 'setprefix':
     Username: ${tod.result.username}
     Fullname: ${tod.result.user_fullname}
     Bio: ${tod.result.user_bio}
-
     Jumlah postingan: ${tod.result.user_post_total}
     Following: ${tod.result.user_following}
     Follower: ${tod.result.user_followers}`;
@@ -4474,7 +4336,6 @@ case 'setprefix':
     Username: ${q}
     Nickname: ${i.result.user.nickname}
     Bio: ${i.result.user.signature}
-
     Number of posts: ${i.result.stats.videoCount}
     Following: ${i.result.stats.followingCount}
     Follower: ${i.result.stats.followerCount}`;
@@ -5551,7 +5412,6 @@ case 'waifu':
             get_resultP = get_resultL.result
             textP =`
 *YOUTUBE PLAY*
-
 Title : ${get_resultP.judul}
 Link : ${get_resultP.url_audio}
             `
